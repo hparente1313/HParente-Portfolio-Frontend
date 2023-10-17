@@ -1,18 +1,30 @@
 {
-  "name": "hparente-portfolio-frontend",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "vue": "^3.3.4"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^4.2.3",
-    "vite": "^4.4.5"
-  }
+    "name": "hparente-portfolio-frontend",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "flow": "flow",
+        "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix ./",
+        "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path ../.gitignore"
+    },
+    "dependencies": {
+        "vue": "^3.3.4"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.23.0",
+        "@babel/core": "^7.23.2",
+        "@babel/preset-flow": "^7.22.15",
+        "@vitejs/plugin-vue": "^4.2.3",
+        "eslint": "^8.51.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-vue": "^9.17.0",
+        "flow-bin": "^0.218.1",
+        "prettier": "^3.0.3",
+        "vite": "^4.4.5",
+        "vue-eslint-parser": "^9.3.2"
+    }
 }
